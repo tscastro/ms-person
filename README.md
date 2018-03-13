@@ -33,19 +33,19 @@ http://localhost:8080/swagger-ui.html
 JSON Response:
 
 ```json
-[{"id":1,"name":"Vico"},{"id":2,"name":"Ceolin"},{"id"Bolão"}]
+[{"id": 1, "name": "Patricia", "creditLimit": 1, "risk": "A", "shortAddress": "Street", "rate": 0}]
 ```
 
 ### Update
 
 ```
-http://localhost:8080/update?name=Ceolin
+http://localhost:8080/update?id=1&name=Carla&creditLimit=200&risk=B&shortAddress=Endereco%20%20Update%2066&rate=10
 ```
 
 JSON Response:
 
 ```json
-[{"id":1,"name":"Ceolin"},{"id":2,"name":"Ceolin"},{"id":3,"name":"Bolão"}]
+[{"id": 1, "name": "Carla", "creditLimit": 200, "risk": "B", "shortAddress": "Endereco  Update 66", "rate": 10}]
 ```
 
 Edit
