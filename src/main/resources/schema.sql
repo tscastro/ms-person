@@ -1,0 +1,1 @@
+create table person(id bigint auto_increment primary key, name varchar(20), creditLimit decimal(10,2), risk char(1), shortAddress varchar(100), rate int(2));

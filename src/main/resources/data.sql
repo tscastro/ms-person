@@ -1,0 +1,1 @@
+insert into person (id, name, creditLimit, risk, shortAddress, rate) values(1, 'Patricia', 1, 'A', 'Street', 0);
