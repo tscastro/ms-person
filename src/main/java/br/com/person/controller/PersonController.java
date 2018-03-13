@@ -24,9 +24,6 @@ public class PersonController {
 	@Autowired
     private PersonService service;
 	
-	private final static String ANGULAR_SERVER = "http://localhost:4200"; 
-
-	@CrossOrigin(origins = ANGULAR_SERVER)
 	@RequestMapping(value = "/", method = RequestMethod.DELETE, produces = MediaType.APPLICATION_JSON_VALUE)
 	@ApiOperation(value = "Deleta uma pessoa")
     @ApiResponses(value = { 
@@ -41,7 +38,6 @@ public class PersonController {
 		return Response.status(200).entity("Registro deletado com sucesso").build();
     }
 	
-	@CrossOrigin(origins = ANGULAR_SERVER)
 	@RequestMapping(value = "/", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
 	@ApiOperation(value = "Busca todas as pessoas")
     @ApiResponses(value = { 
@@ -54,7 +50,6 @@ public class PersonController {
         return service.selectAll();
     }
 
-	@CrossOrigin(origins = ANGULAR_SERVER)
 	@RequestMapping(value = "/insert", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE)
 	@ApiOperation(value = "Inclui uma pessoa")
     @ApiResponses(value = { 
@@ -73,7 +68,6 @@ public class PersonController {
         return service.selectAll();
     }
 	
-	@CrossOrigin(origins = ANGULAR_SERVER)
 	@RequestMapping(value = "/update", method = RequestMethod.PUT, produces = MediaType.APPLICATION_JSON_VALUE)
 	@ApiOperation(value = "Atualiza uma pessoa")
     @ApiResponses(value = { 
@@ -95,7 +89,6 @@ public class PersonController {
         return service.selectAll();
     }
 	
-	@CrossOrigin(origins = ANGULAR_SERVER)
 	@RequestMapping(value = "/rateCalculator", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
 	@ApiOperation(value = "Calcula taxa baseada no risco")
     @ApiResponses(value = { 
